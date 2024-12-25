@@ -12,7 +12,216 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css/style.css" rel="stylesheet" />
+    <style>
+
+
+
+
+:root {
+    --buttonColor: #265c26;
+    --button-text-color:#ffffff;
+
+    --spacing: 0.1rem;
+    --Transition: all 0.3s linear;
+    --bodyColor: #f6f6f6;
+    --nav-width: 250px;
+  }
+  html {
+    font-size: 62.5%;
+  }
+.main-container .col-main {
+  padding: 0;
+}
+
+.images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.store {
+  width: 1000px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+
+.main.container {
+  width: 100%;
+  padding: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.paragraph {
+  text-align: justify;
+  padding: 0 50px 0 50px;
+  margin-bottom: 40px;
+}
+
+.content-row {
+  text-align: center;
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.005em;
+}
+
+.content-row h2 {
+  font-size: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 700;
+  color: #21293c;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 1;
+}
+
+.content-row .brand-item span {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #21293c;
+  display: inline-block;
+  padding: 0 35px;
+}
+
+.content-row .brand-item b {
+  font-size: 16px;
+  color: #7a7d82;
+  font-weight: 400;
+  display: block;
+  padding-top: 10px;
+}
+
+.filter-history .tab-content {
+  width: calc(100% - 73px);
+  display: inline-block;
+  float: left;
+  text-align: left;
+  font-size: 15px;
+  letter-spacing: 0.005em;
+  line-height: 27px;
+  padding-left: 30px;
+}
+
+.filter-history .tab-content h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #21293c;
+  margin-bottom: 32px;
+}
+
+.filter-history .nav-tabs {
+  width: 73px;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-top: 43px;
+}
+
+.filter-history .nav-tabs li {
+  display: block;
+}
+
+.filter-history .nav-tabs li a {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #979797;
+  padding: 14px 3px;
+  display: block;
+  position: relative;
+  text-align: right;
+}
+
+.filter-history .nav-tabs li.active a {
+  color: #21293c;
+}
+
+.filter-history .nav-tabs li a:before {
+  content: "\f883";
+  color: #979797;
+  font-family: "porto-icons";
+  font-size: 10px;
+  padding-right: 20px;
+  margin-top: -5px;
+  position: absolute;
+  top: 21px;
+  left: 0px;
+}
+
+.filter-history .nav-tabs li.active a:before {
+  color: #6f727b;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.heading {
+  background:linear-gradient(to right,var(--bodyColor), var(--buttonColor)) ;
+  margin: 0px 0px 10px 0px;
+  padding: 10px 10px 15px 0px;
+  border-radius: 0.4rem;
+  font-size: large;
+  font-weight: 700;
+  text-align: right;
+  color: var(--button-text-color);
+  ;
+ 
+  
+  
+}
+.img-about{
+    width: 200px;
+    height: 150px;
+}
+.main-section {
+display: grid;
+gap: 10px;
+justify-items: center;
+
+}
+
+@media screen and (min-width: 924px)  {
+    .img-about{
+width: 300px;
+height: 150px;
+    }
+    .main-section {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        }
+  .column {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+  }
+}
+
+    </style>
   </head>
   <body>
     <div data-content-type="html" data-appearance="default" data-element="main">
@@ -35,7 +244,7 @@
               منبع تغذیه، خازن، ديود، آي سي، ترانزيستور، ماژول و پروگرامر فعالیت
               دارد.
             </p>
-            <img src="https://ageniz.com/media/logo/websites/1/ag-logo_1.webp" alt="آگنیز"  class="img"></picture>
+            <img src="https://ageniz.com/media/logo/websites/1/ag-logo_1.webp" alt="آگنیز"  class="img-about"></picture>
         </div>
             <p class="paragraph"></p>
 
@@ -122,6 +331,5 @@
         </div>
       </div>
     </div>
-    <script src="/js/App.js" type="module"></script>
   </body>
 </html>
